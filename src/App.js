@@ -42,6 +42,8 @@ function App() {
 
 const handleSubmit = (event) => {
   //define the function after creating the hook
+  console.log('THIS IS THE EVENT!!', event.target)
+  event.preventDefault()
 }
 
   return (
