@@ -1,8 +1,12 @@
+import React, {useState} from 'react'
 import './App.css';
 import Card from './Card'
 
 
 function App() {
+//define my hook
+        //storage, nameOfFunction 
+  const [text, setText] = useState([])
 
   const info = [{
     name: 'Kazeem',
@@ -30,6 +34,16 @@ function App() {
     //show the name and company [x]
 //Style [x]
 
+//create text field [x]
+   //handle submit function
+//hooks [x]
+//create a List component []
+//pass down the text as props to the List component []
+
+const handleSubmit = (event) => {
+  //define the function after creating the hook
+}
+
   return (
     <div className="App">
       {
@@ -39,6 +53,20 @@ function App() {
           ) 
         })
       }
+
+      <div>
+        <form onSubmit={handleSubmit}>
+
+          <label>
+            Task:
+            <input type="text" />
+          </label>
+
+          <input type="submit" value="submit" />
+
+        </form>
+      </div>
+      
     </div>
   );
 }
